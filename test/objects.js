@@ -971,7 +971,7 @@
     assert.strictEqual(_.isMatch(null, {a: 1}), false, 'Non-empty spec called with null object returns false');
 
     _.each([null, void 0], function(item) { assert.strictEqual(_.isMatch(item, null), true, 'null matches null'); });
-    _.each([null, void 0], function(item) { assert.strictEqual(_.isMatch(item, null), true, 'null matches {}'); });
+    _.each([null, void 0], function(item) { assert.strictEqual(_.isMatch(item, {}), true, 'null matches {}'); });
     assert.strictEqual(_.isMatch({b: 1}, {a: void 0}), false, 'handles undefined values (1683)');
 
     _.each([true, 5, NaN, null, void 0], function(item) {
