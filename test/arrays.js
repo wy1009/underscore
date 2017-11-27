@@ -370,7 +370,7 @@
 
   QUnit.test('lastIndexOf', function(assert) {
     var numbers = [1, 0, 1];
-    var falsy = [void 0, '', 0, false, NaN, null, void 0];
+    var falsy = [void 0, '', 0, false, NaN, null];
     assert.strictEqual(_.lastIndexOf(numbers, 1), 2);
 
     numbers = [1, 0, 1, 0, 0, 1, 0, 0, 0];
