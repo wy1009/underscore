@@ -289,7 +289,7 @@
       return x.x === 4;
     }), {x: 4, z: 1});
 
-    _.findIndex([{a: 1}], function(a, key, o) {
+    _.find([{a: 1}], function(a, key, o) {
       assert.strictEqual(key, 0);
       assert.deepEqual(o, [{a: 1}]);
       assert.strictEqual(this, _, 'called with context');
